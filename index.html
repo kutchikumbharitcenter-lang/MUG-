@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mug House – Custom Printed T-Shirts, Mugs &amp; More</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={theme:{extend:{colors:{brand:'#1a63e0',navy:'#0f2a56',red:{DEFAULT:'#e8262b'}},fontFamily:{sans:['Poppins','system-ui','sans-serif']}}}}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="sticky top-0 z-30 bg-[var(--card)] border-b ln" style="top:env(safe-area-inset-top,0px)">
+ <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+  <a href="#home" class="logo text-2xl"><span class="text-brand italic">Mug</span><br><span class="text-red text-xl tracking-wide">HOUSE</span></a>
+  <nav id="nav" class="hidden md:flex gap-7 text-[13px] font-medium"></nav>
+  <div class="flex items-center gap-4 text-xl">
+   <button aria-label="Search" onclick="toast('Search coming soon')">🔍</button>
+   <a href="#login" aria-label="Account">👤</a>
+   <a href="#cart" aria-label="Cart" class="relative">🛒<span id="badge" class="absolute -top-2 -right-3 bg-red text-white text-[10px] rounded-full w-4 h-4 grid place-items-center">0</span></a>
+  </div>
+ </div>
+ <nav id="nav2" class="md:hidden flex gap-5 text-xs font-medium overflow-x-auto px-4 pb-2"></nav>
+</header>
+<main id="app" class="max-w-6xl mx-auto px-4 py-6"></main>
+<footer class="bg-[#0d2147] text-slate-300 mt-10">
+ <div class="max-w-6xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-4 text-sm">
+  <div><div class="logo text-3xl"><span class="text-white italic">Mug</span><br><span class="text-red">HOUSE</span></div><p class="text-xs mt-3 text-slate-400">Custom Print | T-Shirts | Mugs | Bottles | More</p></div>
+  <div><h4 class="text-white font-semibold mb-3">Quick Links</h4><ul class="space-y-1.5 text-xs"><li><a href="#home">Home</a></li><li><a href="#shop">Shop</a></li><li><a href="#customize">Customize</a></li><li><a href="#home">About Us</a></li><li><a href="#home">Contact</a></li></ul></div>
+  <div><h4 class="text-white font-semibold mb-3">Customer Care</h4><ul class="space-y-1.5 text-xs"><li>Privacy Policy</li><li>Terms &amp; Conditions</li><li>Shipping Policy</li><li>Return &amp; Refund</li></ul></div>
+  <div><h4 class="text-white font-semibold mb-3">Contact Us</h4><ul class="space-y-1.5 text-xs"><li>📞 0321-3283881</li><li>💬 0323-2130365</li><li>📍 Mug House, Street No.2 Ghosia Gali, New Kumhar Wara, Lyari, Karachi</li></ul></div>
+ </div>
+ <div class="border-t border-white/10 text-xs px-4 py-4 max-w-6xl mx-auto flex justify-between"><span>© 2025 Mug House. All Rights Reserved.</span><span>Custom Print Made Easy ♥</span></div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
